@@ -1,0 +1,69 @@
+body {
+  background-color: black;
+}
+
+.music-badge {
+  background-color: #ffffff;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  margin-right: 600px;
+  margin-left: 550px;
+}
+
+.art {
+  height: 64px;
+  width: 64px;
+  position: relative;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.text {
+  width: 160px;
+  margin-left: 12px;
+}
+
+.artist {
+  color: #000000aa;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0 0 0 0;
+  border-radius: 8px;
+  background-color: 00000055;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar {
+  width: 6px;
+  height: 24px;
+  background-color: white;
+  margin: 3px;
+  border-radius: 3px;
+  animation: bar 1400ms infinite;
+}
+
+@keyframes bar {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 24px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+.bar:nth-child(even) {
+  animation-delay: 700ms;
+}
